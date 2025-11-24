@@ -1,0 +1,223 @@
+/* ===========================
+   GLOBAL
+=========================== */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style-type: none;
+}
+.container {
+  width: 100%;
+  max-width: 1286px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 9999;
+  padding: 20px 0;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 150px;
+}
+
+.menu ul {
+  display: flex;
+  gap: 40px;
+}
+.menu ul li a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.btns a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #050505;
+  background: #fdbb57;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+/* Space below fixed navbar */
+body {
+  padding-top: 120px;
+}
+
+/* ===========================
+   BANNER
+=========================== */
+.banner {
+  background-color: #fae3b6;
+  border-radius: 20px;
+}
+
+.banner-main {
+  display: flex;
+  gap: 60px;
+  padding: 100px 0;
+}
+
+.banner-left h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 54px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 30px;
+}
+.banner-left p {
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 60px;
+}
+.banner-left a {
+  font-size: 20px;
+  background: #000;
+  color: #fff;
+  padding: 20px 60px;
+  border-radius: 10px;
+}
+
+.banner-left,
+.banner-right {
+  width: 50%;
+}
+
+/* ===========================
+   COLLECTION
+=========================== */
+.text h1 {
+  text-align: center;
+  font-size: 50px;
+  padding: 120px 0 80px 0;
+}
+
+.new-collection {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.sweater,
+.jeans,
+.baskets {
+  width: 33%;
+  position: relative;
+}
+
+.sweater a,
+.jeans a,
+.baskets a {
+  position: absolute;
+  bottom: 20px;
+  width: 90%;
+  text-align: center;
+  background: #fff;
+  padding: 10px 0;
+  border-radius: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* ===========================
+   FASHION SECTION
+=========================== */
+.fashion-main {
+  display: flex;
+  gap: 40px;
+  padding: 80px 0;
+}
+.fashion-left,
+.fashion-right {
+  width: 50%;
+}
+.fashion-right h2 {
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+.fashion-right p {
+  font-size: 20px;
+  margin-right: 50px;
+}
+
+/* ===========================
+   SELLER SECTION
+=========================== */
+.seller-main {
+  background: #cfa485;
+  padding: 80px 0;
+  border-radius: 20px;
+}
+.seller-aria {
+  display: flex;
+  gap: 40px;
+}
+.seller-prdcs {
+  width: 40%;
+}
+.seller-prdcs h2 {
+  font-size: 50px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.seller-prdcs p {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 30px;
+  text-shadow: 0px 2px 3px #000;
+}
+.seller-prdcs a {
+  font-size: 20px;
+  padding: 15px 60px;
+  background: #000;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.seller-review {
+  width: 60%;
+  display: flex;
+  gap: 20px;
+}
+.review-one,
+.review-two {
+  width: 50%;
+  position: relative;
+}
+.rating {
+  position: absolute;
+  bottom: 0;
+  background: #fff;
+  width: 100%;
+  padding: 10px 15px;
+}
+
