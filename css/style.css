@@ -132,20 +132,31 @@ body {
   position: relative;
 }
 
-.sweater a,
-.jeans a,
+.sweater a, .jeans a, .baskets a {
+    position: absolute;
+    left: 40%;
+    bottom: 20px;
+    width: 75%;
+    text-align: center;
+    background: #fff;
+    padding: 10px 0px;
+    border-radius: 15px;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-weight: 500;
+}
 .baskets a {
-  position: absolute;
-  bottom: 20px;
-  width: 90%;
-  text-align: center;
-  background: #fff;
-  padding: 10px 0;
-  border-radius: 15px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 20px;
-  font-weight: 500;
+    position: absolute;
+    left: 47%;
+    bottom: 20px;
+    width: 85%;
+    text-align: center;
+    background: #fff;
+    padding: 10px 0px;
+    border-radius: 15px;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-weight: 500;
 }
 
 /* ===========================
@@ -153,18 +164,25 @@ body {
 =========================== */
 .fashion-main {
   display: flex;
-  gap: 40px;
+  gap: 92px;
   padding: 80px 0;
 }
 .fashion-left,
 .fashion-right {
   width: 50%;
 }
+.fashion-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .fashion-right h2 {
+  width: 60%;
   font-size: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 63px;
 }
 .fashion-right p {
+  width: 40%;
   font-size: 20px;
   margin-right: 50px;
 }
@@ -219,5 +237,599 @@ body {
   background: #fff;
   width: 100%;
   padding: 10px 15px;
+}
+
+.rating p {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.rating span {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.rating span:first-of-type {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.rating span:last-of-type {
+  color: #000;
+  font-weight: 700;
+}
+
+/* ===========================
+   RESPONSIVE DESIGN
+=========================== */
+
+/* Large Desktop (1440px and above) */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+
+/* Desktop (1024px to 1439px) */
+@media (max-width: 1439px) {
+  .container {
+    max-width: 1200px;
+  }
+  
+  .banner-left h1 {
+    font-size: 48px;
+  }
+  
+  .text h1,
+  .fashion-right h2,
+  .seller-prdcs h2 {
+    font-size: 44px;
+  }
+}
+
+/* Tablet Landscape (992px to 1023px) */
+@media (max-width: 1023px) {
+  .container {
+    max-width: 960px;
+    padding: 0 30px;
+  }
+  
+  .menu ul {
+    gap: 25px;
+  }
+  
+  .menu ul li a {
+    font-size: 18px;
+  }
+  
+  .banner-main {
+    gap: 40px;
+    padding: 80px 0;
+  }
+  
+  .banner-left h1 {
+    font-size: 42px;
+  }
+  
+  .banner-left p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  
+  .banner-left a {
+    font-size: 18px;
+    padding: 18px 50px;
+  }
+  
+  .text h1 {
+    font-size: 40px;
+    padding: 100px 0 60px 0;
+  }
+  
+  .fashion-right h2,
+  .seller-prdcs h2 {
+    font-size: 38px;
+  }
+  
+  .fashion-right p,
+  .seller-prdcs p {
+    font-size: 18px;
+  }
+}
+
+/* Tablet Portrait (768px to 991px) */
+@media (max-width: 991px) {
+  .container {
+    max-width: 720px;
+    padding: 0 25px;
+  }
+  
+  body {
+    padding-top: 100px;
+  }
+  
+  .logo {
+    width: 120px;
+  }
+  
+  .menu ul {
+    gap: 20px;
+  }
+  
+  .menu ul li a {
+    font-size: 16px;
+  }
+  
+  .btns a {
+    font-size: 16px;
+    padding: 8px 12px;
+    margin-left: 8px;
+  }
+  
+  .banner-main {
+    flex-direction: column;
+    gap: 30px;
+    padding: 60px 20px;
+  }
+  
+  .banner-left,
+  .banner-right {
+    width: 100%;
+  }
+  
+  .banner-left h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .banner-left p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  
+  .banner-left a {
+    font-size: 16px;
+    padding: 15px 40px;
+  }
+  
+  .text h1 {
+    font-size: 36px;
+    padding: 80px 0 50px 0;
+  }
+  
+  .new-collection {
+    gap: 30px;
+  }
+  
+  .sweater a,
+  .jeans a,
+  .baskets a {
+    font-size: 18px;
+    padding: 8px 0;
+  }
+  
+  .fashion-main {
+    flex-direction: column;
+    gap: 30px;
+    padding: 60px 0;
+  }
+  
+  .fashion-left,
+  .fashion-right {
+    width: 100%;
+  }
+  
+  .fashion-right h2 {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+  
+  .fashion-right p {
+    font-size: 16px;
+    margin-right: 0;
+  }
+  
+  .seller-main {
+    padding: 60px 0;
+  }
+  
+  .seller-aria {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .seller-prdcs,
+  .seller-review {
+    width: 100%;
+  }
+  
+  .seller-prdcs h2 {
+    font-size: 34px;
+  }
+  
+  .seller-prdcs p {
+    font-size: 16px;
+  }
+  
+  .seller-prdcs a {
+    font-size: 18px;
+    padding: 12px 50px;
+  }
+}
+
+/* Mobile Landscape & Small Tablet (576px to 767px) */
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px;
+    padding: 0 20px;
+  }
+  
+  body {
+    padding-top: 90px;
+  }
+  
+  nav {
+    padding: 15px 0;
+  }
+  
+  .logo {
+    width: 100px;
+  }
+  
+  .menu ul {
+    gap: 15px;
+  }
+  
+  .menu ul li a {
+    font-size: 14px;
+  }
+  
+  .btns a {
+    font-size: 14px;
+    padding: 6px 10px;
+    margin-left: 5px;
+  }
+  
+  .banner-main {
+    padding: 40px 15px;
+    gap: 25px;
+  }
+  
+  .banner-left h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  
+  .banner-left p {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+  
+  .banner-left a {
+    font-size: 14px;
+    padding: 12px 30px;
+  }
+  
+  .text h1 {
+    font-size: 28px;
+    padding: 60px 0 40px 0;
+  }
+  
+  .new-collection {
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .sweater,
+  .jeans,
+  .baskets {
+    width: 100%;
+  }
+  
+  .sweater a,
+  .jeans a,
+  .baskets a {
+    font-size: 16px;
+    width: 60%;
+    left: 50%;
+  }
+  
+  .fashion-main {
+    padding: 50px 0;
+    gap: 25px;
+  }
+  
+  .fashion-right h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  
+  .fashion-right p {
+    font-size: 14px;
+  }
+  
+  .seller-main {
+    padding: 50px 0;
+  }
+  
+  .seller-aria {
+    gap: 25px;
+  }
+  
+  .seller-prdcs h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+  
+  .seller-prdcs p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .seller-prdcs a {
+    font-size: 16px;
+    padding: 10px 40px;
+  }
+  
+  .seller-review {
+    gap: 15px;
+  }
+  
+  .rating p {
+    font-size: 14px;
+  }
+  
+  .rating span {
+    font-size: 12px;
+  }
+}
+
+/* Mobile Portrait (480px to 575px) */
+@media (max-width: 575px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  body {
+    padding-top: 80px;
+  }
+  
+  .nav-main {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .logo {
+    width: 90px;
+  }
+  
+  .menu {
+    order: 3;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .menu ul {
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .menu ul li a {
+    font-size: 13px;
+  }
+  
+  .btns a {
+    font-size: 13px;
+    padding: 5px 8px;
+  }
+  
+  .banner-main {
+    padding: 30px 10px;
+  }
+  
+  .banner-left h1 {
+    font-size: 24px;
+  }
+  
+  .banner-left p {
+    font-size: 13px;
+  }
+  
+  .banner-left a {
+    font-size: 13px;
+    padding: 10px 25px;
+  }
+  
+  .text h1 {
+    font-size: 24px;
+    padding: 50px 0 30px 0;
+  }
+  
+  .new-collection {
+    gap: 20px;
+  }
+  
+  .fashion-main {
+    padding: 40px 0;
+  }
+  
+  .fashion-right h2 {
+    font-size: 22px;
+  }
+  
+  .fashion-right p {
+    font-size: 13px;
+  }
+  
+  .seller-main {
+    padding: 40px 0;
+  }
+  
+  .seller-prdcs h2 {
+    font-size: 22px;
+  }
+  
+  .seller-prdcs p {
+    font-size: 13px;
+  }
+  
+  .seller-prdcs a {
+    font-size: 14px;
+    padding: 8px 30px;
+  }
+  
+  .seller-review {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .review-one,
+  .review-two {
+    width: 100%;
+  }
+}
+
+/* Small Mobile (320px to 479px) */
+@media (max-width: 479px) {
+  .container {
+    padding: 0 12px;
+  }
+  
+  body {
+    padding-top: 75px;
+  }
+  
+  nav {
+    padding: 12px 0;
+  }
+  
+  .logo {
+    width: 80px;
+  }
+  
+  .menu ul li a {
+    font-size: 12px;
+  }
+  
+  .btns a {
+    font-size: 12px;
+    padding: 4px 6px;
+  }
+  
+  .banner-main {
+    padding: 25px 8px;
+  }
+  
+  .banner-left h1 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  
+  .banner-left p {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .banner-left a {
+    font-size: 12px;
+    padding: 8px 20px;
+  }
+  
+  .text h1 {
+    font-size: 20px;
+    padding: 40px 0 25px 0;
+  }
+  
+  .new-collection {
+    gap: 15px;
+  }
+  
+  .sweater a,
+  .jeans a,
+  .baskets a {
+    font-size: 14px;
+    padding: 6px 0;
+  }
+  
+  .fashion-main {
+    padding: 35px 0;
+    gap: 20px;
+  }
+  
+  .fashion-right h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .fashion-right p {
+    font-size: 12px;
+  }
+  
+  .seller-main {
+    padding: 35px 0;
+  }
+  
+  .seller-prdcs h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  
+  .seller-prdcs p {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+  
+  .seller-prdcs a {
+    font-size: 13px;
+    padding: 7px 25px;
+  }
+  
+  .rating {
+    padding: 8px 10px;
+  }
+  
+  .rating p {
+    font-size: 13px;
+    margin: 8px 0;
+  }
+  
+  .rating span {
+    font-size: 11px;
+  }
+}
+
+/* Extra Small Mobile (max 374px) */
+@media (max-width: 374px) {
+  .banner-left h1 {
+    font-size: 18px;
+  }
+  
+  .text h1,
+  .fashion-right h2,
+  .seller-prdcs h2 {
+    font-size: 18px;
+  }
+  
+  .menu ul {
+    gap: 8px;
+  }
+  
+  .menu ul li a {
+    font-size: 11px;
+  }
+  
+  .btns a {
+    font-size: 11px;
+    padding: 4px 5px;
+  }
+}
+
+/* Ensure images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
