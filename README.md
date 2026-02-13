@@ -1,4 +1,4 @@
-my 1st project using html and css only
+My 1st project using html and css only
 
 live demo:
 https://html-and-css-only.vercel.app/
